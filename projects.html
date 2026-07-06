@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Jonathan Dellenbach</title>
+<meta name="description" content="Portfolio of Jonathan Dellenbach, BSc (Hons) Computer Games Development graduate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-glow"></div>
+
+<button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <span></span><span></span><span></span>
+</button>
+
+<aside class="sidebar">
+  <a href="index.html" class="brand">
+    <span class="brand-dot"></span>
+    <span>Jonathan Dellenbach</span>
+  </a>
+
+  <nav class="side-nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="timeline.html">Timeline</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="contact.html" class="nav-cta">Contact</a>
+  </nav>
+
+  <div class="side-socials">
+    <a href="mailto:dellenbachj5@gmail.com" aria-label="Email" class="social-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/jonathan-dellenbach-137011260/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M12 17v-4.5a2.5 2.5 0 0 1 5 0V17M12 12.5V17"/></svg>
+    </a>
+  </div>
+</aside>
+
+<main class="content">
+
+<section id="projects" class="section wrap">
+    <div class="section-head">
+      <p class="tag">Projects</p>
+      <h2>What I've built</h2>
+      <p class="section-sub">A collection of games and systems I've built across my degree and free time.</p>
+    </div>
+    <div class="achieve-list">
+      <!-------------------------------------------------->
+      <!--SnapIt------------------------------------------>
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/7finalyear_images/fyp1.gif", "images/project_images/7finalyear_images/fyp2.gif", "images/project_images/7finalyear_images/fyp3.gif", "images/project_images/7finalyear_images/fyp4.gif"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Snap-It - Final Year Project</h3>
+          <p>A narrative photography game built in C++ and SFML, where photographing NPCs drives through four narrative phases. NPC movement is fully decoupled from the NPC class via a swappable Strategy-pattern behaviour system (Wander, Flee, Flock, and two state-machine behaviours), while a Factory Method spawns phase-specific "special entities" that a dedicated PhaseManager tracks independently of the game loop.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--Afraid-Of-The-Dark------------------------------>
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/6areYouAfraidOfTheDark_images/dark.gif", "images/project_images/6areYouAfraidOfTheDark_images/Screenshot_1.png", "images/project_images/6areYouAfraidOfTheDark_images/Screenshot_2.png", "images/project_images/6areYouAfraidOfTheDark_images/Screenshot_3.png", "images/project_images/6areYouAfraidOfTheDark_images/Screenshot_4.png", "images/project_images/6areYouAfraidOfTheDark_images/Screenshot_5.png"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Are You Afraid Of The Dark - Mobile Game</h3>
+          <p>A top-down survival horror game for iOS and Android, built in Godot with a five-person team over a 12-week agile production cycle with weekly milestones. Players navigate dark levels with a depleting torch while an enemy AI hunts them whenever they're not lit up, with a full post-level analytics pipeline tracking deaths, session time, and player pathing to CSV.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--NPC-Behaviours---------------------------------->
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/5npcBehaviours_images/formations.gif", "images/project_images/5npcBehaviours_images/wander.gif", "images/project_images/5npcBehaviours_images/arriveSlow.gif", "images/project_images/5npcBehaviours_images/arriveFast.gif", "images/project_images/5npcBehaviours_images/seek.gif", "images/project_images/5npcBehaviours_images/pursue.gif", "images/project_images/5npcBehaviours_images/swarm.gif"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>NPC Behaviours - C++ SFML</h3>
+          <p>A showcase of steering and AI behaviours implemented in C++ with SFML, including Seek, Wander, Pursue, Arrive (fast and slow), Formations and Swarm. Each behaviour demonstrates a different approach to agent movement.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--Mirror-Multiplayer------------------------------>
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/4networkingUnity_images/mirrorTag1.png", "images/project_images/4networkingUnity_images/mirrorTag2.png", "images/project_images/4networkingUnity_images/mirrorTag3.png" ]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Mirror Multiplayer Tag Game - Unity Networking</h3>
+          <p>A server-authoritative multiplayer tag game built in Unity with Mirror, featuring Runners vs Taggers across rotating maps. Implements Network Transform interpolation for smooth movement, threshold based position syncing to reduce bandwidth, and server side hit validation to prevent fake hit and teleport exploits. Tested under simulated high-latency conditions using Clumsy.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--Gravital-Shot----------------------------------->
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/3gravitationalShot_images/Screenshot_1.png", "images/project_images/3gravitationalShot_images/Timeline1.gif", "images/project_images/3gravitationalShot_images/Timeline2.gif", "images/project_images/3gravitationalShot_images/Timeline3.gif", "images/project_images/3gravitationalShot_images/Timeline4.gif"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Gravital Shot - Unity Game</h3>
+          <p>A 3D arcade space shooter built in Unity over a 4-week sprint with a team of three, where the player pilots a ship across surfaces in space, battling multiple enemy types and collecting power-ups across three stages. I built the custom shaders along with the stage geometry and the power-up system.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--Tank-Collision-Avoidance------------------------>
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/2npcCollisionAvoid_images/ai_collision.gif"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Basic Tank AI Steering & Obstacle Avoidance - C++ SFML</h3>
+          <p>Implemented the AI-controlled tank's steering behaviour and a seek behaviour that pursues the player while a look-ahead obstacle-avoidance system probes three directions against nearby obstacles.</p>
+        </div>
+      </article>
+      <!-------------------------------------------------->
+      <!--BFS-A*-Pathfinding------------------------------>
+      <!-------------------------------------------------->
+      <article class="achieve-item">
+        <div class="achieve-media" data-images='["images/project_images/1pathfinding_images/bfs_search.gif", "images/project_images/1pathfinding_images/astar_search.gif"]'><span>Add screenshot</span></div>
+        <div class="achieve-body">
+          <div class="card-status">Completed</div>
+          <h3>Maze Pathfinding (BFS, A*) - C++ SFML</h3>
+          <p>A templated graph structure (weighted nodes and arcs via adjacency lists) built to implement and visually compare two pathfinding algorithms, Breadth-First Search and A*, with nodes coloured live during the search to show expansion, cost accumulation and the final shortest path.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="muted">© <span id="year"></span> Jonathan Dellenbach</span>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
