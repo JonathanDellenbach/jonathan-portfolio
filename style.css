@@ -113,7 +113,7 @@ a{ color: inherit; text-decoration: none; }
 
 .mobile-toggle{
   display:none;
-  position: fixed; top: 18px; right: 18px; z-index: 60;
+  position: fixed; top: 18px; left: 18px; z-index: 60;
   flex-direction:column; justify-content:center; gap:5px;
   width: 40px; height: 40px;
   background: var(--surface);
@@ -253,6 +253,7 @@ a{ color: inherit; text-decoration: none; }
 @media (max-width: 900px){
   .about-layout{ grid-template-columns: 1fr; }
   .photo-stack{ height: 220px; margin: 8px auto 60px; max-width: 240px; }
+  .stack-card{ left: 50%; margin-left: -95px; }
 }
 
 /* Interests block ("Outside of code") - sits full-width below the About panel */
@@ -404,7 +405,7 @@ a{ color: inherit; text-decoration: none; }
 .skill-group h3{ font-size: 0.92rem; color: var(--text-muted); font-weight: 500; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.04em; }
 .tag-list{ display:flex; flex-wrap:wrap; gap: 10px; }
 .tag-list span{
-  font-family: var(--font-mono); font-size: 0.8rem;
+  font-family: var(--font-body); font-weight: 500; font-size: 0.85rem;
   background: var(--surface); border: 1px solid var(--border);
   padding: 7px 14px; border-radius: 999px; color: var(--text);
 }
@@ -442,6 +443,7 @@ a{ color: inherit; text-decoration: none; }
   .sidebar{
     left: -100%;
     width: 260px;
+    padding-top: 84px;
     transition: left .25s ease;
     box-shadow: 20px 0 40px rgba(0,0,0,0.4);
   }

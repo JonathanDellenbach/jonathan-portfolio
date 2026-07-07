@@ -153,4 +153,16 @@ if (navToggle && sidebar) {
       navToggle.setAttribute('aria-expanded', false);
     });
   });
+
+  // Close the sidebar when tapping/clicking outside of it
+  document.addEventListener('click', (e) => {
+    const isOpen = sidebar.classList.contains('open');
+    if (!isOpen) return;
+    const clickedInsideSidebar = sidebar.contains(e.target);
+    const clickedToggle = navToggle.contains(e.target);
+    if (!clickedInsideSidebar && !clickedToggle) {
+      sidebar.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', false);
+    }
+  });
 }
